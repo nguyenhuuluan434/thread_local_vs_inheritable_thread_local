@@ -6,7 +6,7 @@ public class ThreadLocalUtils<T> {
     private static ThreadLocalUtils INSTANCE = null;
 
     private ThreadLocal<T> threadLocal = new ThreadLocal<>();
-    private InheritableThreadLocal<T> inheritableThreadLocal = new InheritableThreadLocal<>();
+    private ThreadLocal<T> inheritableThreadLocal = new InheritableThreadLocal<>();
 
     private <T> ThreadLocalUtils() {
     }
